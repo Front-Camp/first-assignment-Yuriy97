@@ -7,7 +7,8 @@
 * max([-1, 0]);   // 0
 */
 const max = arr => {
-  /* your logic here...*/
+	var array = arr.filter(item => Number.isInteger(item));
+  	return Math.max.apply(null, array);
 };
 
 export default max;

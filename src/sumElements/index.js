@@ -11,7 +11,10 @@
  * sumElements([Infinity, NaN, 1]); // 1
  */
 const sumElements = arr => {
-  /* your logic here...*/
+  var array = arr.filter(item => isFinite(item));
+  return array.reduce(function(acc, current) {
+  	return acc + current;
+  }, 0);
 };
 
 export default sumElements;

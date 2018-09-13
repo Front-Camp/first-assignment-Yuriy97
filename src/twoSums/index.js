@@ -9,7 +9,9 @@
  * twoSums([5, 9, 3], 12); // [9, 3]
  */
 const twoSums = (arr, base) => {
-  /* your logic here...*/
+  if (arr[0] + arr[1] == base) {
+  	return arr.slice(0, 2);
+  }
 };
 
 export default twoSums;
